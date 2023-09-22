@@ -16,8 +16,6 @@ function authenticator(req,res,next){
             })
         }
     })
-
-
     
 }
 

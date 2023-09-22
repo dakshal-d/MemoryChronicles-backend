@@ -17,3 +17,21 @@ const NoteModel = mongoose.model("note", noteSchema);
 module.exports = {
   NoteModel,
 };
+
+
+// const mongoose=require("mongoose");
+
+// const noteSchema=mongoose.Schema(
+//   {
+//     day:{type:String},
+//     title:{type:String},
+//     body:{type:String},
+//     user:{type:String},
+
+//   },
+// );
+// const NoteModel=mongoose.model("note",noteSchema);
+
+// module.exports={
+//   NoteModel,
+// };

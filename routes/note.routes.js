@@ -3,11 +3,8 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const { authenticator } = require("../middlewares/authenticator");
 const { NoteModel } = require("../models/NoteModel");
-
 const noteRouter = express.Router();
 noteRouter.use(authenticator);
-
-
 noteRouter.get("/",async(req,res)=>{
     let token = req.headers.authorization
     jwt.verify(token,"dakshal",async(err,decode)=>{
@@ -24,17 +21,11 @@ noteRouter.get("/",async(req,res)=>{
                 message:error.message,
                 status:0
             })
-        }
-    
+        }   
         
     })
-
-   
-
 })
-
 noteRouter.post("/create",async(req,res)=>{
-
 
     try {
         let note = new NoteModel(req.body)
