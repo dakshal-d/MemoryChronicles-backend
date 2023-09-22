@@ -23,7 +23,7 @@ app.use("/", (req, res) => {
     res.send("404 page not found");
 })
 
-app.listen(4000,async()=>{
+app.listen(4002,async()=>{
 
     try {
         await connection
