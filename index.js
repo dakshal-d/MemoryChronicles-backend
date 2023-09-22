@@ -23,7 +23,7 @@ app.use("/", (req, res) => {
     res.send("404 page not found");
 })
 
-app.listen(process.env.port,async()=>{
+app.listen(4000,async()=>{
 
     try {
         await connection
@@ -33,6 +33,6 @@ app.listen(process.env.port,async()=>{
     }
 
 
-    console.log("Server is running on port number",process.env.port)
+    console.log("Server is running on port number",4002)
 
 })
